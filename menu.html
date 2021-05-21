@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="bakes.css" rel="stylesheet"/>
+
+	<style>
+
+		h2{
+
+			padding-top: 40px;
+			text-align: center;
+			font-family: 'Courgette', cursive;
+			color: #00b386;
+		}
+		.seach{
+
+			padding: 19px;
+		}
+
+		input[type=text]{
+
+			border-radius: 4px  ;
+			border:1px solid #669999;
+		}
+
+		button{
+
+			background-color: #00cc99;
+			color: #00664d;
+      		font-weight: 600;
+			border-radius: 3px;
+			border:none;
+			padding:3px;
+		 
+		}
+
+		button:hover{
+			background-color: #42858c;
+
+		}
+
+		.item .card{
+
+			margin-bottom: 30px;
+		}
+	</style>
+</head>
+<body>
+
+
+	<div id="">
+	    <div class="nav">
+	        <div class="logo">
+	            <a href="#"><img src="logo.png" alt="logo"></a>
+	        </div>
+
+	        <div class="navbar">
+
+	            <div class="icon-bar" onclick="Show()">
+	                <i></i>
+	                <i></i>
+	                <i></i>
+	            </div>
+
+	            <ul id="nav-lists">
+	                <li class="close"><span onclick="Hide()">×</span></li>
+	                <li><a href="homepage.html">Home</a></li>
+	                <li><a href="menu.html" class="active">Menus</a></li>
+	                <li><a href="pastry.html">Pastries</a><li>
+	                <li><a href="contact.html">Contact Us</a></li>
+	                <li><a href="../loginSys/logout.php">Logout</a></li>
+	                <form style="width:auto;" action="search.php" method="GET" class="seach">
+	                	
+
+	                		<input type="text"  name="query">
+	                		<button type="submit" value="Search">Search</button>
+	                	
+	           		</form>
+	                
+	            </ul>
+
+	        </div>
+
+
+	    </div>
+
+<script>
+    var navList = document.getElementById("nav-lists");
+    function Show() {
+    navList.classList.add("_Menus-show");
+    }
+
+    function Hide(){
+    navList.classList.remove("_Menus-show");
+    }
+</script>
+
+
+	        <div class="item">
+		    	<!-- Beginning pf products display-->
+		    	<h2>Choose item from the menu.</h2>
+		    		
+
+		    	<div class='card'>
+					  <img src="image/menu1.jpg" style='width:100%;'>
+					  <h3> Vegan Sandwich</h3>
+					  <p class='price'>$10.95</p>
+					  <p>Made with Veggies and meat.</p>
+					  <div>
+					  	<label>Quantity</label>
+					  	<input type='text' name='quantity' value='0'>
+					  </div>
+					  <p><button>Add to Cart</button></p>
+				</div>
+
+
+			</div>
+
+
+
+			 <div class="item">
+		    	<!-- Beginning pf products display-->
+		    	
+		    		
+
+		    	<div class='card'>
+					  <img src="image/menu2.jpg" style='width:100%;'>
+					  <h3> Club Sandwich</h3>
+					  <p class='price'>$8.65</p>
+					  <p>Veggies and eggs.</p>
+					  <div>
+					  	<label>Quantity</label>
+					  	<input type='text' name='quantity' value='0'>
+					  </div>
+					  <p><button>Add to Cart</button></p>
+				</div>
+
+
+			</div>
+
+			<div class="item">
+		    	<!-- Beginning pf products display-->
+		    	
+		    		
+
+		    	<div class='card'>
+					  <img src="image/avocado.jpg" style='width:100%;'>
+					  <h3> Avocado Sandwich</h3>
+					  <p class='price'>$11.25</p>
+					  <p>Vegan.</p>
+					  <div>
+					  	<label>Quantity</label>
+					  	<input type='text' name='quantity' value='0'>
+					  </div>
+					  <p><button>Add to Cart</button></p>
+				</div>
+
+
+			</div>
+
+			<div class="item">
+		    	<!-- Beginning pf products display-->
+		    	
+		    		
+
+		    	<div class='card'>
+					  <img src="image/lasagna.jpg" style='width:100%;'>
+					  <h3> Lasagna</h3>
+					  <p class='price'>$10.95</p>
+					  <p>Chicken Lasagna.</p>
+					  <div>
+					  	<label>Quantity</label>
+					  	<input type='text' name='quantity' value='0'>
+					  </div>
+					  <p><button>Add to Cart</button></p>
+				</div>
+
+
+			</div>
+
+			
+			<div class="item">
+		    	<!-- Beginning pf products display-->
+		    	
+		    		
+
+		    	<div class='card'>
+					  <img src="image/pepperoni.jpg" style='width:100%;'>
+					  <h3> Pepperoni pizza</h3>
+					  <p class='price'>$10.99</p>
+					  <p>Peperonni pizza with cheese.</p>
+					  <div>
+					  	<label>Quantity</label>
+					  	<input type='text' name='quantity' value='0'>
+					  </div>
+					  <p><button>Add to Cart</button></p>
+				</div>
+
+
+			</div>
+
+
+
+
+
+</body>
+</html>

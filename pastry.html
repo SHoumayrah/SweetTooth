@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pastry</title>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet"  href="bakes.css">
+	<style>
+		.seach{
+
+            padding: 19px;
+        }
+
+        input[type=text]{
+
+            border-radius: 4px  ;
+            border:1px solid #669999;
+        }
+
+        button{
+
+            background-color: #00cc99;
+            color: #00664d;
+            font-weight: 600;
+            border-radius: 3px;
+            border:none;
+            padding:3px;
+         
+        }
+
+        button:hover{
+            background-color: #42858c;
+
+        }
+	</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="nav">
+        <div class="logo">
+            <a href="#"><img src="logo.png" alt="logo"></a>
+        </div>
+
+        <div class="navbar">
+
+            <div class="icon-bar" onclick="Show()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+
+            <ul id="nav-lists">
+                <li class="close"><span onclick="Hide()">×</span></li>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="menu.html" >Menus</a></li>
+                    <li><a href="pastry.html" class="active">Pastries</a><li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="../loginSys/logout.php">Logout</a></li>
+                    <form style="width:auto;" action="search.php" method="GET" class="seach">
+                        
+
+                            <input type="text"  name="query">
+                            <button type="submit" value="Search">Search</button>
+                        
+                    </form>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <script>
+    var navList = document.getElementById("nav-lists");
+    function Show() {
+    navList.classList.add("_Menus-show");
+    }
+
+    function Hide(){
+    navList.classList.remove("_Menus-show");
+    }
+    </script>
+
+    <div id="slider">
+        <figure>
+
+        <img src="image/croissant3.jpg" alt>
+        <img src="image/tiramisu1.jpg" alt>
+        <img src="image/sandwich.jpg" alt>
+        <img src="image/bread1.jpg" alt>
+        <img src="image/whisk.jpg" alt>
+
+
+        </figure>
+    </div>
+
+    <div class="intro-text">
+        <br><br>
+        <br><br>
+        
+        <!--welcoming the user to the website-->
+        <div id="welcome">
+            
+                <h2>Welcome to sweet tooth</h2>
+        </div>
+
+
+        <h2> To view the different pastries click on their respective links. 
+        </h2>
+
+
+
+    </div>
+
+    <div class="panels">
+        <div class="panel pan2" style="background-image: url(image/cup1.jpg);">
+           <br><br>
+           <a href="cupcakes.php" class="effects cup"><p >Cupcakes</p></a>
+           	
+           	
+           
+          
+           
+        </div>
+
+         <div class="panel pan2" style="background-image: url(image/weds.jpg);">
+           <br><br>
+           
+           <a href="wedding.php" class="effects wed"><p >Wedding Cakes</p></a>
+        </div>
+        
+        
+
+        <div class="panel pan2" style="background-image: url(image/mac.jpg);">
+            <br><br> 
+
+            <a href="themed.php" class="effects theme"><p>Themed Cakes</p></a>
+  
+            
+        </div>
+
+        <div class="panel pan2" style="background-image: url(image/des1.jpg);" >
+            <br><br> 
+            
+            <a href="dessert.php" class="effects des"><p>Desserts</p></a>
+           		
+           	
+        </div>
+        
+
+    </div>
+
+
+
+
+
+</div>
+
+</body>
+</html>
